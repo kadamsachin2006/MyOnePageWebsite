@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HP Tablet | Built for Professionals</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="common.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo"><strong>HP Tablet</strong></div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h1>HP Tablet</h1>
+    <p>The power of a workstation in the palm of your hand.</p>
+    <a href="#pricing" class="btn">See Pricing</a>
+  </section>
+
+  <section id="features">
+    <h2 data-aos="fade-right">Key Features</h2>
+    <div class="features">
+      <div class="card" data-aos="zoom-in">
+        <h3>Smart Display</h3>
+        <p>Crystal-clear 13" edge-to-edge display with touch and pen support.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Pro Performance</h3>
+        <p>Intel Core i7 processor and 16GB RAM for seamless multitasking.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Long Battery Life</h3>
+        <p>Up to 12 hours of unplugged performance to power your workday.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2 data-aos="fade-left">Pricing Plans</h2>
+    <div class="pricing-table">
+      <div class="card" data-aos="flip-left">
+        <h3>Starter</h3>
+        <div><img src="/images/hp tab.jpg" style="height: 100px;width: 100px;border-radius: 10px;"></div>
+        <div class="price">$499</div>
+        <p>8GB RAM / 128GB SSD</p>
+        <p>Touch Display</p>
+        <p>Wi-Fi Only</p>
+        <p>&nbsp</p>
+        <a href="#contact" class="btn">Buy Now</a>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <h3>Pro</h3>
+        <div><img src="/images/hp tab.jpg" style="height: 100px;width: 100px;border-radius: 10px;"></div>
+        <div class="price">$699</div>
+        <p>16GB RAM / 256GB SSD</p>
+        <p>Pen Included</p>
+        <p>Wi-Fi + LTE</p>
+        <p>&nbsp</p>
+        <a href="#contact" class="btn">Buy Now</a>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <h3>Enterprise</h3>
+        <div><img src="/images/hp tab.jpg" style="height: 100px;width: 100px;border-radius: 10px;"></div>
+        <div class="price">$899</div>
+        <p>16GB RAM / 512GB SSD</p>
+        <p>Pen + Keyboard</p>
+        <p>Wi-Fi + LTE + Warranty</p>
+        <p>&nbsp</p>
+        <a href="#contact" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="form-section">
+    <h2 data-aos="fade-up">Get in Touch</h2>
+    <p>Have questions or ready to order? We’d love to hear from you.</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-aos="fade-up">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 HP Tablet. All rights reserved.</p>
+  </footer>
+
+  <button onclick="scrollToTop()" id="toTopBtn">↑</button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
