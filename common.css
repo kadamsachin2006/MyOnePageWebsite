@@ -141,9 +141,53 @@
       z-index: 999;
     }
 
-
-    @media (max-width: 768px) {
-      .hero h1 {
+      
+	@media (max-width: 768px) {
+	
+	.hero h1 {
         font-size: 2.2rem;
       }
-    }
+	
+  .nav-container {
+   display: flex;
+    flex-direction: row;     /* ensure row layout */
+    justify-content: space-between; /* pushes logo left, menu button right */
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 1101;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    background: #222;
+    padding: 60px 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: flex-start;
+    transition: right 0.3s ease-in-out;
+    z-index: 1100;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 15px 10px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+  }
+}
